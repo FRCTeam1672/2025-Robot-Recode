@@ -1,0 +1,87 @@
+{
+  "version": "2025.0",
+  "waypoints": [
+    {
+      "anchor": {
+        "x": 5.28325131345524,
+        "y": 5.600759927674672
+      },
+      "prevControl": null,
+      "nextControl": {
+        "x": 5.5436992528657205,
+        "y": 6.155084948144105
+        "x": 5.128,
+        "y": 5.205
+      },
+      "prevControl": null,
+      "nextControl": {
+        "x": 5.41125,
+        "y": 5.897
+      },
+      "isLocked": false,
+      "linkedName": null
+    },
+    {
+      "anchor": {
+        "x": 5.868211398062227,
+        "y": 6.379459351118995
+      },
+      "prevControl": {
+        "x": 5.453240993449782,
+        "y": 5.925721121042576
+        "x": 5.70375,
+        "y": 6.6964999999999995
+      },
+      "prevControl": {
+        "x": 5.54775,
+        "y": 6.384499999999998
+      },
+      "nextControl": null,
+      "isLocked": false,
+      "linkedName": null
+    }
+  ],
+  "rotationTargets": [],
+  "constraintZones": [],
+  "pointTowardsZones": [],
+  "eventMarkers": [
+    {
+      "name": "OuttakeAlgae",
+      "waypointRelativePos": 0.6574830072944289,
+      "endWaypointRelativePos": null,
+      "command": {
+        "type": "named",
+        "data": {
+          "name": "OuttakeAlgae"
+        }
+      }
+    }
+  ],
+  "eventMarkers": [],
+  "globalConstraints": {
+    "maxVelocity": 1.0,
+    "maxAcceleration": 3.0,
+    "maxAngularVelocity": 540.0,
+    "maxAngularAcceleration": 720.0,
+    "nominalVoltage": 12.0,
+    "unlimited": false
+  },
+  "goalEndState": {
+    "velocity": 0,
+    "rotation": -23.70082849898606
+  },
+  "reversed": false,
+  "folder": "New Folder",
+  "idealStartingState": {
+    "velocity": 0,
+    "rotation": -117.60089094278467
+    "rotation": -20.151747034211894
+  },
+  "reversed": false,
+  "folder": "PATHS FOR WH ALGAE AUTO",
+  "idealStartingState": {
+    "velocity": 0,
+    "rotation": -113.78527879019391
+  },
+  "useDefaultConstraints": true
+}

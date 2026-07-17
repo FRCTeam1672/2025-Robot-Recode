@@ -1,0 +1,66 @@
+{
+  "version": "2025.0",
+  "waypoints": [
+    {
+      "anchor": {
+        "x": 5.382570558723715,
+        "y": 5.3730583091654145
+      },
+      "prevControl": null,
+      "nextControl": {
+        "x": 5.606181669834826,
+        "y": 6.113770114720971
+      },
+      "isLocked": false,
+      "linkedName": null
+    },
+    {
+      "anchor": {
+        "x": 1.605,
+        "y": 6.666
+      },
+      "prevControl": {
+        "x": 1.992097222222224,
+        "y": 5.898840277777778
+      },
+      "nextControl": null,
+      "isLocked": false,
+      "linkedName": null
+    }
+  ],
+  "rotationTargets": [
+    {
+      "waypointRelativePos": 0.5,
+      "rotationDegrees": 150.3841307481251
+    }
+  ],
+  "constraintZones": [],
+  "pointTowardsZones": [],
+  "eventMarkers": [
+    {
+      "name": "Spit Algae",
+      "waypointRelativePos": 0,
+      "endWaypointRelativePos": null,
+      "command": null
+    }
+  ],
+  "globalConstraints": {
+    "maxVelocity": 1.5,
+    "maxAcceleration": 3.0,
+    "maxAngularVelocity": 540.0,
+    "maxAngularAcceleration": 720.0,
+    "nominalVoltage": 12.0,
+    "unlimited": false
+  },
+  "goalEndState": {
+    "velocity": 0,
+    "rotation": 129.6779259899675
+  },
+  "reversed": false,
+  "folder": "PATHS FOR AUTO3",
+  "idealStartingState": {
+    "velocity": 0,
+    "rotation": -121.59751879814004
+  },
+  "useDefaultConstraints": false
+}
