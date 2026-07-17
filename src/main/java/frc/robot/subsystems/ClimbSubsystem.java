@@ -1,9 +1,6 @@
 package frc.robot.subsystems;
 
-import static frc.robot.Constants.ClimbConstants.CLIMB_LIMIT;
 import static frc.robot.Constants.ClimbConstants.CLIMB_SPEED;
-import static frc.robot.Constants.Tolerances.CLIMB_TOLERANCE;
-
 import java.util.function.Supplier;
 
 import com.revrobotics.spark.SparkBase.PersistMode;
@@ -28,6 +25,7 @@ public class ClimbSubsystem extends SubsystemBase {
 
     private Trigger badClimbTrigger = new Trigger(() -> !isClimbGood());
 
+    @SuppressWarnings("removal")
     public ClimbSubsystem() {
         badClimbTrigger.onTrue(Commands.runOnce(() -> {
             Elastic.sendNotification(new Elastic.Notification(Elastic.Notification.NotificationLevel.ERROR, "Twisted Climb Shaft", "Climb motors have gone out of sync, stopped elevators to not twist climb shaft.", 10000));

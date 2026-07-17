@@ -177,7 +177,7 @@ public class RobotContainer {
                         e.printStackTrace();
                         return Commands.none();
                     }
-                }, Set.of()));
+                // }, Set.of()));
                 }, Set.of()).handleInterrupt(() -> {
                     arm.homeEverything().schedule();
         }));

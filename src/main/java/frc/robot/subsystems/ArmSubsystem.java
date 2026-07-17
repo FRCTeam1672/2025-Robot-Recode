@@ -74,6 +74,7 @@ public class ArmSubsystem extends SubsystemBase {
     public boolean elevOverride = false;
     public boolean algaeOverride = false;
 
+    @SuppressWarnings("removal")
     public ArmSubsystem() {
         badElevTrigger.onTrue(Commands.runOnce(() -> {
             Elastic.sendNotification(
@@ -89,7 +90,7 @@ public class ArmSubsystem extends SubsystemBase {
         rAlgaeIntake.configure(config, ResetMode.kResetSafeParameters, PersistMode.kPersistParameters);
 
 
-        //TODO: CHANEG
+        //TODO: CHANGE
         config.smartCurrentLimit(40);
         config.idleMode(IdleMode.kBrake);
         config.inverted(false);
@@ -134,6 +135,7 @@ public class ArmSubsystem extends SubsystemBase {
         });
     }
 
+    @SuppressWarnings("removal")
     @Override
     public void periodic() {
         SmartDashboard.putNumber("coral/Coral Shooter Velocity", coralShooter.getEncoder().getVelocity());
@@ -349,9 +351,9 @@ public class ArmSubsystem extends SubsystemBase {
              homeAlgae(),
              Commands.waitUntil(() -> isCoralAtPosition()).andThen(coralTo(C_L3_POSITION))
          );
-            extendElevatorTo(E_L3_POSITION),
-            Commands.waitUntil(() -> isCoralAtPosition()).andThen(coralTo(C_L3_POSITION))
-        );  
+        //     extendElevatorTo(E_L3_POSITION);
+        //     Commands.waitUntil(() -> isCoralAtPosition()).andThen(coralTo(C_L3_POSITION))
+        // ;  
     }
 
     public Command scoreL3(boolean home) {

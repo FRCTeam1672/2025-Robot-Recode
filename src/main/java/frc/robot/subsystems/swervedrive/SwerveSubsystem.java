@@ -312,7 +312,7 @@ public class SwerveSubsystem extends SubsystemBase {
 
   public Command getPathAndExtend(String pathName, Command extendCommand)
       throws FileVersionException, IOException, ParseException {
-  public Command getPathAndExtend(String pathName, Command extendCommand) throws FileVersionException, IOException, ParseException {
+  // public Command getPathAndExtend(String pathName, Command extendCommand) throws FileVersionException, IOException, ParseException {
     PathPlannerPath fromPathFile = PathPlannerPath.fromPathFile(pathName);
     Pose2d pose;
     if (DriverStation.getAlliance().get() == Alliance.Red) {
